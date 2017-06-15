@@ -1,1 +1,1 @@
-"# Panasonic TCP NEEO driver" 
+"# Epson Projector TCP NEEO driver" 
