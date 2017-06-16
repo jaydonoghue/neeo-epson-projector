@@ -1,0 +1,18 @@
+{
+  "name": "epson_pj_driver",
+  "version": "1.0.0",
+  "description": "Epson 8350UB driver for NEEO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "projector",
+    "neeo"
+  ],
+  "author": "Jay Donoghue",
+  "license": "MIT",
+  "dependencies": {
+    "neeo-sdk": "^0.38.2"
+  }
+}
