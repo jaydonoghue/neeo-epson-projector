@@ -28,7 +28,7 @@ function startSdkExample(brain) {
     console.log('- Start server');
     neeoapi.startServer({
         brain,
-        port: 6336,
+        port: 6337,
         name: 'epson-projector',
         devices: [pj]
     })

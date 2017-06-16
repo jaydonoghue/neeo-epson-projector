@@ -16,13 +16,13 @@ module.exports.onButtonPressed = function onButtonPressed(name) {
     client.connect(PJ_PORT, PJ_IP, function () {
         console.log('Connected');
 
-        // We only deal with power right now
-        var stringToSend = "PWR " + name.toUpperCase() + "\r\n";
+        if (name == "on" || name == "off") {
+            var stringToSend = "PWR " + name.toUpperCase() + "\r\n";
 
-        console.log('Sent Message %s', stringToSend);
+            console.log('Sent Message %s', stringToSend);
 
-        client.write(stringToSend);
-
+            client.write(stringToSend);
+        }
 
         client.destroy();
     });
