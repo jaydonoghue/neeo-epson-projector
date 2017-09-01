@@ -7,7 +7,6 @@ console.log('Epson TCP Projector');
 console.log('---------------------------------------------');
 
 /*
- * Adapter - an Adapter to connect inputs + outputs from HDBaseT matrix
  */
 
 // first we set the device info, used to identify it on the Brain
@@ -21,7 +20,11 @@ const pj = neeoapi.buildDevice('Epson TCP Projector')
     // Capabilities of the device
     .addButton({ name: 'on', label: 'Power On' })
     .addButton({ name: 'off', label: 'Power Off' })
-    
+    .addButton({ name: 'CMODE 06', label: 'Brightness: Dynamic'})
+    .addButton({ name: 'CMODE 0C', label: 'Brightness: Living Room' })
+    .addButton({ name: 'CMODE 07', label: 'Brightness: Natural' })
+    .addButton({ name: 'CMODE 13', label: 'Brightness: THX' })
+
     .addButtonHander(controller.onButtonPressed);
 
 function startSdkExample(brain) {
